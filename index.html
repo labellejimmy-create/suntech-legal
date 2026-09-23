@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SunTech Énergie — Documents légaux</title>
+<style>
+  :root {
+    --accent: #f2a400;
+    --accent-fonce: #cc8500;
+    --texte: #1f2430;
+    --texte-doux: #4a5062;
+    --fond: #faf9f7;
+    --carte: #ffffff;
+    --trait: #e7e3da;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--fond);
+    color: var(--texte);
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .entete { border-bottom: 1px solid var(--trait); background: var(--carte); }
+  .entete-interieur {
+    max-width: 820px; margin: 0 auto; padding: 24px 20px;
+    display: flex; align-items: center; gap: 14px;
+  }
+  .entete img { height: 38px; width: auto; }
+  .entete strong { font-size: 15px; letter-spacing: .01em; }
+  main { max-width: 820px; margin: 0 auto; padding: 36px 20px 64px; }
+  h1 { font-size: 24px; margin: 0 0 10px; }
+  p { color: var(--texte-doux); margin: 0 0 28px; }
+  .liste { display: grid; gap: 12px; }
+  .lien-carte {
+    display: block;
+    padding: 16px 18px;
+    background: var(--carte);
+    border: 1px solid var(--trait);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--texte);
+    font-weight: 600;
+  }
+  .lien-carte:hover { border-color: var(--accent); }
+  .lien-carte span { display: block; font-weight: 400; color: var(--texte-doux); font-size: 13.5px; margin-top: 4px; }
+</style>
+</head>
+<body>
+  <div class="entete">
+    <div class="entete-interieur">
+      <img src="assets/logosuntech.png" alt="SunTech Énergie">
+      <strong>SunTech Énergie</strong>
+    </div>
+  </div>
+  <main>
+    <h1>Documents légaux</h1>
+    <p>Documents publics relatifs à l'application interne SunTech AutoQuote et à son intégration avec QuickBooks Online.</p>
+    <div class="liste">
+      <a class="lien-carte" href="confidentialite.html">
+        Politique de confidentialité
+        <span>Données consultées via l'API QuickBooks Online et leur utilisation.</span>
+      </a>
+      <a class="lien-carte" href="conditions-utilisation.html">
+        Conditions d'utilisation (CLUF)
+        <span>Licence, propriété et responsabilité liées à l'application interne.</span>
+      </a>
+    </div>
+  </main>
+</body>
+</html>
